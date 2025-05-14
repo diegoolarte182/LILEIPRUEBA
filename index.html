@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Licenciatura en Lenguas Extranjeras con Énfasis en Inglés</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a1b9a, #283593);
+            margin: 0;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: white;
+            color: #004080;
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            font-size: 3.5em;
+            color: #004080;
+            margin-bottom: 30px;
+        }
+        header img {
+            height: 180px;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        nav button {
+            background-color: #7e57c2;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            margin: 15px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.5em;
+            transition: transform 0.3s ease, background-color 0.3s;
+        }
+        nav button:hover {
+            transform: scale(1.1);
+            background-color: #5e35b1;
+        }
+        .section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 60px;
+            margin: 30px 0;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1s ease;
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .large-image {
+            width: 100%;
+            max-width: 900px;
+            margin: 30px auto;
+            border-radius: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+        .footer-link {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .footer-link button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.8em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+        }
+        .footer-link button:hover {
+            background-color: #5e35b1;
+        }
+        .cursor-icon {
+            font-size: 1.5em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        a {
+            color: #bb86fc;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Licenciatura en Lenguas Extranjeras con Énfasis en Inglés</h1>
+        <img src="Emilio (4).png" alt="Logo UNAD">
+        <img src="projects_237_1643752986535-General-acreditacion-logo.png" alt="Logo Acreditación">
+    </div>
+</header>
+
+<div class="container">
+    <nav>
+        <button onclick="showSection('infoGeneral')">Información General</button>
+        <button onclick="showSection('enfoque')">Enfoque Pedagógico</button>
+        <button onclick="showSection('practica')">Práctica Pedagógica</button>
+        <button onclick="showSection('internacional')">Internacionalización</button>
+        <button onclick="showSection('grado')">Proceso de Grado</button>
+        <button onclick="showSection('acompanamiento')">Acompañamiento</button>
+    </nav>
+
+    <div class="section active" id="infoGeneral">
+        <h2>Información General</h2>
+        <p>El programa de Licenciatura en Lenguas Extranjeras con Énfasis en Inglés (LILEI) de la UNAD está diseñado para formar docentes altamente capacitados en la enseñanza del inglés bajo una modalidad virtual.</p>
+        <img class="large-image" src="1.jpg" alt="Información General">
+    </div>
+
+    <div class="section" id="enfoque">
+        <h2>Enfoque Pedagógico</h2>
+        <p>Integra teoría y práctica para fortalecer las competencias pedagógicas de los futuros docentes, usando tecnologías educativas innovadoras.</p>
+        <img class="large-image" src="2.jpg" alt="Enfoque Pedagógico">
+    </div>
+
+    <div class="section" id="practica">
+        <h2>Práctica Pedagógica</h2>
+        <p>Fases: Observación, Inmersión e Investigación, con prácticas reales en entornos educativos.</p>
+        <img class="large-image" src="3.jpg" alt="Práctica Pedagógica">
+    </div>
+
+    <div class="section" id="internacional">
+        <h2>Internacionalización</h2>
+        <p>Certificación internacional con exámenes reconocidos: TOEFL, IELTS y otros.</p>
+        <img class="large-image" src="5.jpg" alt="Internacionalización">
+    </div>
+
+    <div class="section" id="grado">
+        <h2>Proceso de Grado</h2>
+        <p>Opciones: Diplomado, créditos de especialización o maestría, y trabajo de grado. Requiere certificación C1 en inglés.</p>
+        <img class="large-image" src="Diseño sin título (6).jpg" alt="Proceso de Grado">
+    </div>
+
+    <div class="footer-link">
+        <a href="https://estudios.unad.edu.co/licenciatura-en-lenguas-extranjeras-con-enfasis-en-ingles" target="_blank">
+            <button>
+                <span class="cursor-icon">🖱️</span> CLICK AQUÍ PARA MAYOR INFORMACIÓN
+            </button>
+        </a>
+    </div>
+</div>
+
+<script>
+    function showSection(id) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => section.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
